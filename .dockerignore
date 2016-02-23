@@ -150,7 +150,6 @@ Network Trash Folder
 Temporary Items
 .apdisk
 ### NotepadPP template
-# Notepad++ backups #
 *.bak
 ### Xcode template
 # Xcode
