@@ -4,5 +4,6 @@ COPY ./src /app
 WORKDIR /app
 
 RUN npm install
+RUN npm install -g pm2
 
-CMD npm start
+CMD pm2 start -i 0 --watch server.js && pm2 logs all
