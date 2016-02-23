@@ -23,5 +23,8 @@
   },
   "devDependencies": {
     "dynalite": "^0.17.3"
+  },
+  "scripts": {
+    "start": "node server.js"
   }
 }

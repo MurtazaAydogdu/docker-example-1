@@ -6,7 +6,7 @@ var AWS = require('aws-sdk')
 var db = module.exports = new AWS.DynamoDB({
   // This endpoint will try to connect to a DynamoDB running locally
   // Comment this out if you want to connect to a live/production AWS DynamoDB instance
-  endpoint: 'http://localhost:4567',
+  endpoint: typeof process.env.dynamo == 'undefined' ? 'http://localhost:4567' : process.env.dynamo,
   region: 'us-east-1',
   // These credentials are only necessary if connecting to AWS,
   // but including credentials in your client-side code is obviously
